@@ -11,19 +11,22 @@ func TestBubbleSort(t *testing.T) {
 	dataset := []int{10, 1, 3, 6, 5, 7, 2, 8, 9, 4}
 	expected := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
-	assert.Equal(t, expected, sort.BubbleSort(dataset))
+	sort.BubbleSort(dataset)
+	assert.Equal(t, expected, dataset)
 }
 
 func TestHeapSort(t *testing.T) {
 	dataset := []int{10, 1, 3, 6, 5, 7, 2, 8, 9, 4}
 	expected := []int{10, 9, 8, 7, 6, 5, 4, 3, 2, 1}
 
-	assert.Equal(t, expected, sort.HeapSort(dataset))
+	sort.HeapSort(dataset)
+	assert.Equal(t, expected, dataset)
 }
 
 func TestInsertionSort(t *testing.T) {
 	dataset := []int{10, 1, 3, 6, 5, 7, 2, 8, 9, 4}
 	expected := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
-	assert.Equal(t, expected, sort.InsertionSort(dataset))
+	sort.InsertionSort(dataset)
+	assert.Equal(t, expected, dataset)
 }
