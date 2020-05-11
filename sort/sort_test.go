@@ -20,3 +20,10 @@ func TestHeapSort(t *testing.T) {
 
 	assert.Equal(t, expected, sort.HeapSort(dataset))
 }
+
+func TestInsertionSort(t *testing.T) {
+	dataset := []int{10, 1, 3, 6, 5, 7, 2, 8, 9, 4}
+	expected := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+	assert.Equal(t, expected, sort.InsertionSort(dataset))
+}
