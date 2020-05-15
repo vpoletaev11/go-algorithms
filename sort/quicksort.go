@@ -1,5 +1,16 @@
 package sort
 
+/*
+	QUICK SORT:
+
+	Best:    O(n log n)
+	Average: O(n log n)
+	Worst:   O(n^2)
+
+	Memory:  O(log n)
+	Stable:  No
+*/
+
 // QuickSort - algorithm that finds pivot value and divides slice in two parts: lesser and greater than pivot.
 // Algorithm works recursively for divided parts.
 func QuickSort(slice []int) {

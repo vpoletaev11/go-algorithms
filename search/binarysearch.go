@@ -1,5 +1,15 @@
 package search
 
+/*
+	BINARY SEARCH:           BINARY MULTIPLE SEARCH:
+
+	Best:    O(1)            Best:    O(1)
+	Average: O(log n)        Average: O(log n + k)  where k - count of duplicate values
+	Worst:   O(log n)        Worst:   O(log n + k)  where k - count of duplicate values
+
+	Memory:  O(1)            Memory:  O(1)
+*/
+
 // BinarySearch - algorithm that finds middle value of slice and compare it with desired value.
 // If desired value == middle value - desired value are found.
 // If desired value < middle value - desired value should be in left part of slice from middle value.
@@ -31,7 +41,7 @@ func BinarySearch(slice []int, desired int) int {
 	}
 }
 
-// BinaryMultipleSearch - same as BinarySearch, but when desired value found algorithm sequentially checks it left and right neighbors to find range of desired values.
+// BinaryMultipleSearch same as BinarySearch, but when desired value found - algorithm sequentially checks it left and right neighbors to find range of desired values.
 func BinaryMultipleSearch(slice []int, desired int) (from, to int) {
 	begin, end := 0, len(slice)-1
 	var middle int

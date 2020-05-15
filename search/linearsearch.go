@@ -1,5 +1,15 @@
 package search
 
+/*
+	LINEAR SEARCH:
+
+	Best:    O(1)
+	Average: O(n)
+	Worst:   O(n)
+
+	Memory:  O(1)
+*/
+
 // LinearSearch - algorithm that sequentially checks each element of the list until a match is found.
 func LinearSearch(slice []int, desired int) int {
 	for i, val := range slice {
