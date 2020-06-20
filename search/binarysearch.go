@@ -8,6 +8,12 @@ package search
 	Worst:   O(log n)        Worst:   O(log n + k)  where k - count of duplicate values
 
 	Memory:  O(1)            Memory:  O(1)
+
+
+	goos: linux
+	goarch: amd64
+	BenchmarkBinarySearch-8                 224958303                5.21 ns/op            0 B/op          0 allocs/op
+	BenchmarkBinaryMultipleSearch-8         189608084                6.26 ns/op            0 B/op          0 allocs/op
 */
 
 // BinarySearch - algorithm that finds middle value of slice and compare it with desired value.

@@ -9,6 +9,11 @@ package sort
 
 	Memory:  O(1)
 	Stable:  Yes
+
+
+	goos: linux
+	goarch: amd64
+	BenchmarkInsertionSort-8        12972621                87.7 ns/op             0 B/op          0 allocs/op
 */
 
 // InsertionSort - algorithm that divides an slice into two parts: sorted and unsorted.

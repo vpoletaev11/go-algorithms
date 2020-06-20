@@ -8,6 +8,12 @@ package search
 	Worst:   O(n)
 
 	Memory:  O(1)
+
+
+	goos: linux
+	goarch: amd64
+	BenchmarkLinearSearch-8                 275693473                4.30 ns/op            0 B/op          0 allocs/op
+	BenchmarkLinearMultipleSearch-8         11093736               102 ns/op              56 B/op          3 allocs/op
 */
 
 // LinearSearch - algorithm that sequentially checks each element of the list until a match is found.

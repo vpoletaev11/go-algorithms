@@ -37,3 +37,44 @@ func TestQuickSort(t *testing.T) {
 	sort.QuickSort(dataset)
 	assert.Equal(t, expectedOut, dataset)
 }
+
+// BENCHMARKS
+func BenchmarkBubbleSort(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		b.StopTimer()
+		dataset := []int{10, 1, 3, 6, 5, 7, 2, 8, 9, 4}
+		b.StartTimer()
+
+		sort.BubbleSort(dataset)
+	}
+}
+
+func BenchmarkHeapSort(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		b.StopTimer()
+		dataset := []int{10, 1, 3, 6, 5, 7, 2, 8, 9, 4}
+		b.StartTimer()
+
+		sort.HeapSort(dataset)
+	}
+}
+
+func BenchmarkInsertionSort(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		b.StopTimer()
+		dataset := []int{10, 1, 3, 6, 5, 7, 2, 8, 9, 4}
+		b.StartTimer()
+
+		sort.InsertionSort(dataset)
+	}
+}
+
+func BenchmarkQuickSort(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		b.StopTimer()
+		dataset := []int{10, 1, 3, 6, 5, 7, 2, 8, 9, 4}
+		b.StartTimer()
+
+		sort.QuickSort(dataset)
+	}
+}

@@ -9,6 +9,11 @@ package sort
 
 	Memory:  O(1)
 	Stable:  Yes
+
+
+	goos: linux
+	goarch: amd64
+	BenchmarkBubbleSort-8           11839004               125 ns/op               0 B/op          0 allocs/op
 */
 
 // BubbleSort - algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.

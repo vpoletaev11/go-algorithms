@@ -9,6 +9,11 @@ package sort
 
 	Memory:  O(log n)
 	Stable:  No
+
+
+	goos: linux
+	goarch: amd64
+	BenchmarkQuickSort-8             6083380               218 ns/op               0 B/op          0 allocs/op
 */
 
 // QuickSort - algorithm that finds pivot value and divides slice in two parts: lesser and greater than pivot.

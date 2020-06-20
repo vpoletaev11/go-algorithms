@@ -54,3 +54,28 @@ func TestBinaryMultipleSearchAvoidOutOfRange(t *testing.T) {
 	expected = []int{6, 10}
 	assert.Equal(t, expected, actual)
 }
+
+// BENCHMARKS
+func BenchmarkLinearSearch(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		search.LinearSearch(datasetUnsorted, 88)
+	}
+}
+
+func BenchmarkLinearMultipleSearch(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		search.LinearMultipleSearch(datasetUnsorted, 55)
+	}
+}
+
+func BenchmarkBinarySearch(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		search.BinarySearch(datasetUnsorted, 88)
+	}
+}
+
+func BenchmarkBinaryMultipleSearch(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		search.BinaryMultipleSearch(datasetUnsorted, 55)
+	}
+}

@@ -11,6 +11,11 @@ import "github.com/vpoletaev11/go-data-structures/tree"
 
 	Memory:  O(n)
 	Stable:  No
+
+
+	goos: linux
+	goarch: amd64
+	BenchmarkHeapSort-8    1607998       918 ns/op     256 B/op       5 allocs/op
 */
 
 // HeapSort - algorithm that consistently push elements from slice in the heap and write pop result in the same slice.
